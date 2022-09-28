@@ -1,0 +1,225 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{color: #000; text-decoration: none;}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(0, 0, 0);
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+
+/*길찾기 테스트*/
+
+#section1_wrap{
+    width: 100%;
+    border-top: 1px solid #1C1C1C;
+    border-bottom: 1px solid #1C1C1C;
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+.gif{
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+}
+/*pc*/
+@media (min-width:1000px){
+    #section1_wrap{
+        height: 850px;
+    }
+    #section1{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right,#D4DFFF 50%,#90BDE7 50%);
+    }
+    #section1_bg{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        background: url(../images/main/test_bg.png) no-repeat top center;
+        padding-top: 136px;
+    }
+    #container{/*길찾기 테스트 화면*/
+        background-color: #fff;
+        width: 850px;
+        height: 580px;
+        margin: 0 auto;
+        position: relative;
+    }
+    #test_main h3{
+        padding-top: 120px;
+    }
+    #test_qna{
+        padding: 60px 20px 0;
+    }
+    .qbox{
+        padding: 20px 0 20px 60px;
+    }
+    .answerList{
+        background-color: #fff;
+        width: 40%;
+        height: 200px;
+        border: none;
+        border-radius: 15px;
+        font-size: 100px;
+        margin: 0 2%;
+        background-color:  rgb(238, 238, 238);
+        color: #003787;
+    }
+    .answerList:hover, .answerList:focus{
+        color: #fff;
+        background-color: #FED502;
+    }
+    #test_result{
+        padding: 50px 20px 0;
+    }
+    .result_btn{
+        margin: 10px 0 40px;
+    }
+}
+/*tablet+mobile*/
+@media(max-width:999px){
+    #section1_wrap{
+        height: 700px;
+    }
+    #section1{
+        width: 100%;
+        height: 100%;
+        background: #003787;
+    }
+    #section1_bg{
+        padding-top: 25px;
+    }
+    #container{/*길찾기 테스트 화면*/
+        background-color: #fff;
+        width: 90%;
+        height: 650px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .gif{
+        display: none;
+    }
+    #test_main h3{
+        padding-top: 160px;
+    }
+    #test_main>h3>img{
+        width: 280px;
+    }
+    #test_qna{
+        padding: 60px 10px 0;
+    }
+    .qbox{
+        line-height: 30px;
+        padding: 20px 30px;
+    }
+    .answerList{
+        background-color: #fff;
+        width: 40%;
+        height: 120px;
+        border: none;
+        border-radius: 15px;
+        font-size: 80px;
+        margin: 0 2%;
+        background-color:  rgb(238, 238, 238);
+        color: #003787;
+    }
+    #test_result{
+        padding: 50px 20px 0;
+    }
+    .result_btn{
+        margin: 10px 0 40px;
+    }
+}
+
+
+/*테스트 메인*/
+#test_main{
+    text-align: center;
+}
+
+#test_main p{
+    padding: 10px 0 60px;
+    color: #4D4D4D;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+button{
+    border: none;
+    cursor: pointer;
+    background-color: #FED502;
+    width: 200px;
+    height: 70px;
+    border: solid px #003787;
+    border-radius: 50px;
+}
+#section1 button:hover{
+   background-color: #4d70a5;
+}
+/*테스트 페이지*/
+#test_qna{
+    display: none;
+    text-align: center;
+}
+.qbox{
+    text-align: left;
+    background-color: #fff;
+    border-radius: 25px;
+    margin: 0 0 50px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.status{
+    height: 5px;
+    width: 80%;
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+    margin: 100px auto;
+}
+.statusBar{
+    height: 100%;
+    background:skyblue;
+    border-radius: 20px;
+}
+
+/*결과 페이지*/
+#test_result{
+    display: none;
+    text-align: center;
+}
+#test_result>h3{
+    font-size: 30px;
+}
+.resultname{
+    margin: 50px 0 30px;
+    font-size: 25px;
+}
+.resultImg{
+    margin: 0 auto;
+}
+.resultDesc{
+    margin: 15px 0;
+    font-size: 15px;
+}
+.result_btn{
+    width: 145px;
+    height: 50px;
+    border: none;
+    background-color: #d8d8d8;
+    border-radius: 30px;
+}
+.result_btn a{
+    padding: 10px;
+    font-weight: 600;
+    color: #003787;
+}
+.result p{
+    font-size: 12px;
+    line-height: 20px;
+}
